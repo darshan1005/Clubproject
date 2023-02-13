@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HOME PAGE</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<style>
+  *{
+    font-family: Arial, Helvetica, sans-serif,'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif,monospace,Arial, Helvetica, sans-serif;
+  }
+  /*Animated bg*/
+            body{
+                height: 100%;
+                width:100%
+            }
+            body{
+                background:linear-gradient(-45deg,rgb(220, 255, 246), rgb(214, 250, 250), rgb(254, 254, 223),rgb(238, 213, 248),rgb(245, 237, 220),rgb(235, 219, 246)) ;
+                background-size: 400% 400%;
+                animation: gradient 18s ease-in-out infinite;
+                
+            }
+            @keyframes gradient{
+                0%{
+                    background-position:0% 50%;
+                }
+                50%{
+                    background-position:50% 100%;
+                }
+                100%{
+                    background-position:50% 0%
+                }
+            }
+/*blinker animation*/
+.blink_me {
+  animation: blinker 1.5s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+/*link*/
+.a1:link {
+color: rgba(99, 99, 99, 0.58);
+}
+
+.a1:visited {
+color: #06283D;
+}
+
+.a1:hover {
+color: red;
+}
+
+.a1:active {
+color: blue;
+}
+
+.flex1{
+  background-color: #f7e3c9;
+width: 100%;
+height: 30%;
+display:absolute;
+cursor: no-drop;
+}
+h2{
+  font-size: 1rem;
+}
+.span1{
+  display: flex-inline-block;
+  flex-direction: row-reverse;
+  padding:1%;
+}
+.span0{
+  display:flex;
+  justify-content: center;
+
+}
+.span2{
+  position: relative;
+  margin-left:5%;
+}
+.span3{
+  position: relative;
+  margin-left:10%;
+}
+.span4{
+  position: relative;
+  margin-left:10%;
+}
+
+/*updates animations*/
+@import url("https://fonts.googleapis.com/css?family=Coiny");
+
+.animi{
+  
+    color:red ;
+    padding-top:2%;
+    padding-left: 1%;
+    margin: auto 0 auto 80%;
+    font-family: 'coiny', cursive;
+    text-align: center;
+    font-size: 1.5rem;
+    -webkit-animation: bounce .8s ease infinite alternate-reverse;
+    -webkit-animation: glow .8s ease-in-out infinite alternate-reverse;
+}
+@-webkit-keyframes bounce{
+    0%{
+        text-shadow: 0 5px 0 rgba(75, 75, 75, 0.289),
+                    0 2px 3px rgba(255, 253, 253, 0.256);
+                    
+    }
+    100%{
+        transform: translateY(-15px);
+        text-shadow: 0 50px 0 rgba(133, 131, 131, 0.256),
+        0 0 20px rgb(255, 224, 233);
+       
+    }
+}
+@-webkit-keyframes glow{
+  0%{
+    text-transform: calc(100%);
+    text-shadow: 0 5px 0 none,
+    0 2px 3px none;
+  }
+  100%{
+    transform: translateY(-15px);
+        text-shadow: 0 50px 0 rgba(108, 105, 106, 0.467),
+        0 0 20px rgb(71, 71, 71);
+  }
+}
+.club1{
+    font-size: 0.8em;
+}
+.club1 :hover{
+    color:black;
+
+}
+.block{
+  color:rgb(255, 0, 0);
+  border-radius: 1rem;
+  padding: 0.1px;
+  border-style: groove;
+}
+
+/* card animations */
+.b1{
+  width:50%;
+  display:flex;
+  margin:0;
+  padding:0;
+  min-height: 10vh;
+  background:transparent;
+  justify-content: center;
+  align-items: center;
+  font-family: arial;
+}
+
+.container{
+  width:100%;
+  position: relative;
+  display: flex;
+  flex: row;
+  justify-content: space-between;
+  flex-wrap:wrap;
+  cursor: grab;
+}
+
+.container .card{
+  position: relative;
+}
+
+.container .card .face{
+  width:250px;
+  height: 175px;
+  transition:.4s;
+
+}
+
+.container .card .face.face1{
+  position: relative;
+  background: rgb(245, 225, 191);
+  display: flex;
+  justify-content: center;
+  align-content:center;
+  align-items: center;
+  z-index: 1;
+  transform: translateY(80px);
+}
+
+.container .card:hover .face.face1{
+  transform: translateY(0);
+  box-shadow:
+    inset 0 0 80px whitesmoke,
+    inset 20px 0 80px #f0f,
+    inset -20px 0 80px #0ff,
+    inset 20px 0 300px #f0f,
+    inset -20px 0 300px #0ff,
+    0 0 50px #fff,
+    10px 0 40px rgb(197, 255, 224),
+    -10px 0 40px rgb(161, 235, 205);
+
+}
+
+.container .card .face.face1 .content{
+  opacity: .2;
+  transition:  0.5s;
+  text-align: center;
+}
+
+.container .card:hover .face.face1 .content{
+  opacity: 1;
+
+}
+.face.face1.face2 > p{
+  padding-top: 10px;
+}
+.container .card .face.face1 .content i{
+  font-size: 3em;
+  color: rgb(255, 255, 255);
+  display: inline-block;
+
+}
+
+.container .card .face.face1 .content h3{
+  font-size: 1em;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+.container .card .face.face1 .content a{
+   transition: .5s;
+}
+
+.container .card .face.face2{
+   position: relative;
+   background: rgb(255, 255, 255);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 5px;
+  box-sizing: border-box;
+  box-shadow: 0 20px 50px rgba(1, 1, 1, 0.8);
+  transform: translateY(-100px);
+}
+
+.container .card:hover .face.face2{
+    transform: translateY(0);
+}
+
+.container .card .face.face2 .content p, a{
+  font-size: 10pt;
+  margin: 0px ;
+  padding: 0px;
+  color:rgb(51, 51, 51);
+}
+
+.container .card .face.face2 .content a{
+  text-decoration:none;
+  color: rgb(247, 0, 0);
+  box-sizing: border-box;
+  outline : 0px none rgb(90, 90, 90);
+  padding: 10px;
+  margin: 15px 0 0;
+  display: inline-block;
+}
+
+.container .card .face.face2 .content a:hover{
+  background: rgb(255, 254, 254) ;
+  color: rgb(137, 84, 198);
+  box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
+}
+.res_img{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+ul.no-bullets{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+a{
+  text-decoration:none;
+}
+/*nav bar*/
+nav.m{
+  margin: 0 0 0 10%;
+}
+details{
+  position: absolute;
+  padding-top: -2%;
+}
+.img1{
+  height: auto;
+  width: 100%;
+}
+/*image scroll carousel*/
+#carouselExampleIndicators{
+  width: 50%;
+  height: 50%;
+  padding: 10%;
+  background:none;
+}
+/*menu & club*/
+#c1{
+    display: flex;
+    flex-direction: column;
+    padding: 8%;
+}
+.h{
+  position: relative;
+  padding: 0 0 0 9%;
+}
+</style>
+  </head>
+  <body>
+     <!--header-->
+      <div class = "flex1" >
+        <img class="header" src="ANITS.jpg" alt="header" title="Anil neerukonda institute of technology" width="8%" height="auto">
+        <center><pre>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<big>Anil Neerukonda Institute of Technology & Sciences (Autonomous)</big></font></strong>
+          (Permanent Affiliation - Andhra University &Approved - AICTE
+        Accredited - NBA (ECE,EEE,CSE,IT, Mech. Civil & Chemical) & NAAC)
+        <strong>  Phone:</strong> 08933-225083/84/87 &nbsp; &nbsp;  <strong>Fax:</strong> 226395</pre></center>
+      </div>
+    <br>
+    <!--clubs-->
+      <details>
+        <summary><font size="2.5%" >CLUBS</font></summary>
+         
+              <ul  class="no-bullets">
+                <li><a  class="a1" href="#"><font size="2%" >Coding club         </font></a></li>
+                <li><a  class="a1" href="#"><font size="2%" >Voice club          </font></a></li>
+                <li><a  class="a1" href="#"><font size="2%" >Entrepurener club   </font></a></li>
+                <li><a  class="a1" href="#"><font size="2%" >Sports arena club   </font></a></li>
+                <li><a  class="a1" href="#"><font size="2%" >Rereaction club     </font></a></li>
+                <li><a  class="a1" href="#"><font size="2%" >UI/UX club          </font></a></li>
+              </ul>
+            </details>
+            <!--nav bar-->
+      <nav class="m" align="right">
+        <span class="span1"><a  class="a1" href="#home" style="text-decoration: none;"><b><font size="3%" id="home">Home   </font></b></a></span>
+        <span class="span1"><a  class="a1" href="#itclubs" style="text-decoration: none;"><b><font size="3%" id="">About Clubs </font></b></a></span>
+        <span class="span1"><a  class="a1" href="./6login.html" style="text-decoration: none;"><b><font size="3%" id="">login </font></b></a></span>
+        <span class="span1"><a  class="a1" href="./5register.html" style="text-decoration: none;"><b><font size="3%" id="">Sigup  </font></b></a></span>
+        <span class="span1"><a  class="a1" href="#contact" style="text-decoration: none;"><b><font size="3%" id="">Contact</font> </b></a></span>
+      </nav>
+      <!--updates-->
+      <a href="#" text-decoration="none"><p class="animi" style="font-size: 2.5em;">Updates !</p></a>
+      <!--about college-->
+    <center>
+      <div class="block" style="background:#A3D2CA;width:10%;height: auto;">
+        <h2>About college</h2>
+      </div>
+    </center>
+    <center>
+      <p style="font-size:1em ;">Anil Neerukonda Institute of Technology & Sciences (ANITS), Visakhapatnam
+      is owned by Megha Engineering and<br>Infrastructure Limited (MEIL) which is one of the top infrastructure
+      and manufacturing company in India with headquarters at<br> Hyderabad. The institute was established in the
+      academic year 1801-02 by Anil Neerukonda Educational Society (ANES) which was founded by <br>Dr. N.B.R. Prasad, an
+      NRI Philanthropist from the USA, with industrialists and eminent educationists in memory of Late Anil Neerukonda,
+       S/o. Dr. N.B.R. Prasad.</p>
+       <!--useage of clubs-->
+      <div class="block" style="background:#A3D2CA;width:15%;height: auto;"><h2>How clubs are useful ?</h2></div>
+      <p style="font-size:1em ;">Student Clubs at a college are attuned to help students get most out of their <br>experience
+           while they are enrolled at the college for their academic pursuits.These student clubs offer <br>limitless opportunities
+            for student leadership and participation beyond classroom setup and academic programme.</p>
+          <!--college coursel-->
+          <div class="block" style="background:#A3D2CA;width:8%;height: auto;"><h2 >College</div>
+          <marquee direction="none" width="40%" scrollamount=12% onmouseover="this.stop();"onmouseout="this.start();">
+           <b style="font-size:.9em ;"> ANITS IS A PLACE WHERE PROFISSIONAL MADE FOR THE WORLD. </b></marquee>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="active" aria-current="true" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="active" aria-current="true" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" class="active" aria-current="true" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" class="active" aria-current="true" aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" class="active" aria-current="true" aria-label="Slide 6"></button>
+              </div>
+              <div class="carousel-inner">
+              <div class="carousel-item active">
+              <img src="C:\Users\DarshanBattula\Downloads\anits college.jpeg" class="d-block w-100" alt="..." height="50%" width="50%">
+              </div>
+              <div class="carousel-item">
+              <img src="C:\Users\DarshanBattula\Downloads\logo-Anits.png" class="d-block w-100" alt="..." height="50%" width="50%">
+              </div>
+              <div class="carousel-item ">
+              <img src="C:\Users\DarshanBattula\Downloads\download.jpeg" class="d-block w-100" alt="..." height="50%" width="50%">
+              </div>
+              <div class="carousel-item ">
+              <img src="C:\Users\DarshanBattula\Downloads\anits college.jpeg" class="d-block w-100" alt="..." height="50%" width="50%">
+              </div>
+              <div class="carousel-item ">
+              <img src="C:\Users\DarshanBattula\Downloads\anits college.jpeg" class="d-block w-100" alt="..." height="50%" width="50%">
+              </div>
+              <div class="carousel-item ">
+              <img src="C:\Users\DarshanBattula\Downloads\anits college.jpeg" class="d-block w-100" alt="..." height="50%" width="50%">
+              </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+              <br>
+              <br>
+              <!--clubs card animation-->
+              <center>
+               <div class="block" id="itclubs" style="background:#A3D2CA;width:10%;height: auto;"><h2>IT clubs</h2></div>
+             </center>
+              <br>
+              <br>
+              <div class="card-deck md-6">
+              <div class="b1">
+               <div class="container">
+                  <div class="card">
+                    <div class="face face1">
+                      <div class="content">
+                         <!--i class="fab fa-windows"></i-->
+                        <img src="C:\Users\DarshanBattula\Downloads\club logs\cc.png" height="100" width="120">
+                        <h3>CODING CLUB</h3>
+                      </div>
+                    </div>
+                    <div class="face face2">
+                      <div class="content">
+                        <p  align="center"> <br>Coding Club aims to establish a coding culture on campus, reaching every student passionate about coding.And also helps
+                         to develop the compitative code sloving skills .</p>
+                        <a class="a1" href="./3mainpage.html" type="button">VISIT</a>
+                      </div>
+                    </div>
+                 </div>
+     
+                 <div class="card">
+                    <div class="face face1">
+                      <div class="content">
+                   <!--i class="fab fa-android"></i-->
+                   <img src="C:\Users\DarshanBattula\Downloads\club logs\uiux.png" height="100" width="100">
+                   <h3>UI/UX CLUB</h3>
+                      </div>
+                    </div>
+                    <div class="face face2">
+                      <div class="content">
+                        <p  align="center"> A UX designer works on a team to create products that provide meaningful and enjoyable experiences
+                         for users.UI designers build interfaces in software or other computerized devices.</p>
+                        <a class="a1" href="#" type="button">VISIT</a>
+                      </div>
+                    </div>
+                 </div>
+     
+     
+                 <div class="card">
+                    <div class="face face1">
+                      <div class="content">
+                        <!--i class="fab fa-apple"></i-->
+                         <img src="C:\Users\DarshanBattula\Downloads\club logs\voice.png" height="100" width="100">
+                         <h3>VOICE CLUB</h3>
+                      </div>
+                    </div>
+                    <div class="face face2">
+                      <div class="content">
+                        <p align="center"> The vocal lessons help you to learn how to use proper breath support, increase ocal range, sing with
+                          ease and clarity and learn to project your voice.</p>
+                        <a class="a1" href="#" type="button">VISIT</a>
+                      </div>
+                    </div>
+     
+                 </div>
+                 <div class="card">
+                     <div class="face face1">
+                       <div class="content">
+                         <img src="C:\Users\DarshanBattula\Downloads\club logs\e.png" height="100" width="100">
+                          <h3>ENTERPRENURESHIP  CLUB</h3>
+                       </div>
+                     </div>
+                     <div class="face face2">
+                       <div class="content">
+                         <p  align="center">The Club is a learning-by-doing environment where students can ultivate their entrepreneurship
+                           skills. Students in the club will participate in the development of a business.</p>
+                         <a class="a1" href="#" type="button">VISIT</a>
+                       </div>
+                     </div>
+                  </div>
+     
+                  <div class="card">
+                     <div class="face face1">
+                       <div class="content">
+                         <img src="C:\Users\DarshanBattula\Downloads\club logs\sports.png"height="100" width="100">
+                          <h3>SPORTS ARENA CLUB</h3>
+                       </div>
+                     </div>
+                     <div class="face face2">
+                       <div class="content">
+                         <p  align="center">A Sport Club is defined as a registered student organization that exists to promote and develop
+                           interest in a particular sport or physical activity.</p>
+                         <a class="a1" href="#" type="button">VISIT</a>
+                       </div>
+                     </div>
+                  </div>
+     
+                  <div class="card">
+                     <div class="face face1">
+                       <div class="content">
+                         <img src="C:\Users\DarshanBattula\Downloads\club logs\rc.png" height="100" width="100">
+                          <h3>RECREATION CLUB</h3>
+                       </div>
+                     </div>
+                     <div class="face face2">
+                       <div class="content">
+                         <p  align="center">This club helps to discover their talent. Cultural events include competitions such as instrumental, singing,
+                           dance etc. Every year this club organizes activities such as Talent Hunt, Fresher's Party, Farewell, Fest and Alumni Meet.</p>
+                         <a class="a1" href="#" type="button">VISIT</a>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+             <br>
+             <br>
+     </center>
+
+     <!--footer-->
+                             <center><div class="blink_me" ><h6><mark>✌️JOIN THE CLUBS✌️</mark></h6></div></center>
+                             <!--Persolanl deatils-->
+             <div style="padding:2px;background:#f7e3c9;height:auto;width:100%;">
+               <center><p class="club1"><font color="gray">@copy rights-terms & rights applied</font></p></center>
+               <div class="span0" >
+               <span class="span2" style="font-size: 2.2vh;"><br><br>
+                 <span ><a href="https://anits.edu.in/" target="_blank"><img src="C:\Users\DarshanBattula\Downloads\download.jpeg" height="auto" width="40%"></a></span><br><br>
+                 <span ><font color=#FD5F00><h6>OFFICE ADDRESS</h6></font></span>
+                 <span ><h6>Sangivalasa - 531162, <br>Bheemunipatnam (Mandal), <br>Visakhapatnam (Dist.)<br>Fax: 08933-226395</h6></span><br>
+                 <span ><font color=#FD5F00><h6>BUSINESS PHONE</h6></font></span>
+                 <span ><h6>7330789893 , 9154220250</h6></span><br>
+
+              <!--club mails-->
+                 <span ><font color=#FD5F00 id="contact"><h6>CLUB EMAILS</h6></font></span>
+                 <span ><h6><a href="#" alt="" style="text-decoration: none;">codingclub@gamil.com<a><br>
+                     <a class="a1" href="#" alt="" style="text-decoration: none;">uiux@gmail.com</a><br>
+                     <a class="a1" href="#" alt="" style="text-decoration: none;">voiceclub@gmail.com</a><br>
+                     <a class="a1" href="#" alt="" style="text-decoration: none;">enterprenureshipclub@gmail.com</a><br>
+                     <a class="a1" href="#" alt="" style="text-decoration: none;">sportsclub@gmial.com</a><br>
+                     <a class="a1" href="#" alt="" style="text-decoration: none;">recreationclub@gmail.com </a></h6></span>
+                 </span>
+              <!--clubs-->
+                 <table class="span3" style="font-size:6vh;display:flex;">
+                   <tr>
+                     <td>
+                       <br>
+                       <font color=#FD5F00><h4 class="h">IT Clubs</h4></font>
+                       <font color="gray">
+                     <nav>
+                      <a class="a1" id="c1" href="#" alt="" style="text-decoration: none;">CODING CLUB</a>
+                         <a class="a1" id="c1" href="#" alt="" style="text-decoration: none;">VOICE CLUB</a>
+                           <a class="a1" id="c1" href="#" alt="" style="text-decoration: none;">UI/UX CLUB</a>
+                             <a class="a1" id="c1" href="#" alt="" style="text-decoration: none;">ENTERPRENURESHIP CLUB</a>
+                               <a class="a1" id="c1" href="#" alt="" style="text-decoration: none;">SPORTS AREAN CLUB </a>
+                                 <a class="a1" id="c1" href="#" alt="" style="text-decoration: none;">RECREATION CLUB</a>
+                             </nav><font>
+                     </td>
+                   </tr>
+                 </table>
+                 <!--horizontal navs-->
+                   <table class="span4" style="font-size:6vh;display:flex;" >
+                     <tr>
+                       <td>
+                         <br>
+                         <font color=#FD5F00><h4>Menu</h4></font>
+                         <font color="gray">
+                         <nav>
+                         <a class="a1" id="c1" href="#home" alt="" style="text-decoration: none;">HOME</a>
+                           <a class="a1" id="c1" href="#" alt="" style="text-decoration: none;">ABOUT</a>
+                             <a class="a1" id="c1" href="#" alt="" style="text-decoration: none;">GALLERY</a>
+                               <a class="a1" id="c1" href="#" alt="" style="text-decoration: none;">LOGIN</a>
+                                 <a class="a1" id="c1" href="#" alt="" style="text-decoration: none;">REGISTER</a>
+                                   <a class="a1" id="c1" href="#" alt="" style="text-decoration: none;">CONTACT</a>
+                         </nav><font>
+                       </td>
+                     </tr>
+                   </table>
+              </div>
+              <hr size="5%" noshade="0" style="border-radius: 50px;" title="THE END - CLICK HOME">
+             </div>
+       </body>
+     </html>
+     

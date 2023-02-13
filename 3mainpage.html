@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>main page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+<style>
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+.a1:link {
+color: rgba(99, 99, 99, 0.58);
+}
+
+.a1:visited {
+color: #06283D;
+}
+
+.a1:hover {
+color: red;
+}
+
+.a1:active {
+color: blue;
+}
+.a1{
+  text-decoration: none;
+}
+
+*{
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+.flex1{
+width: 100%;
+height: auto;
+display:absolute;
+cursor: no-drop;
+}
+nav.m{
+  margin: 0 0 0 10%;
+}
+ul.no-bullets{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.span1{
+  display: flex-inline-block;
+  flex-direction: row-reverse;
+  padding:1%;
+}
+.div0{
+  font-size: medium;
+  border-color:  rgb(190, 190, 248);
+  border-radius: 50px;
+  border-style: groove;
+  background:#6df3dd;
+  width:210px;
+  height:30px
+}
+.div01{
+  background-color:transparent;
+  padding-top:30px;
+  padding-bottom: 30px;
+  border-style: none;
+}
+/*Club coordinators*/
+.div001{
+  padding-top:50px;
+  padding-bottom:50px;
+  border-color:rgba(26, 32, 33, 0.776);
+  background-color: transparent;
+}
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+*, *:before, *:after{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing:border-box;
+  box-sizing: border-box;
+}
+
+body{
+  background: #f9f9f9;
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+}
+.container{
+  padding: 1em 0;
+  float: center;
+  width: 50%;
+}
+@media screen and (max-width: 640px){
+  .container{
+    display: block;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 900px){
+  .container{
+    width: 33.33333%;
+  }
+}
+
+.container{
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.content {
+  position: relative;
+  width: 90%;
+  max-width: 400px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.content .content-overlay {
+  background: rgba(0,0,0,0.7);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0rem;
+  top: 0;
+  bottom:0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0.1s;
+  -moz-transition: all 0.4s ease-in-out 0.1s;
+  transition: all 0.4s ease-in-out 0.1s;
+}
+
+.content:hover .content-overlay{
+  opacity: 1;
+}
+
+.content-image{
+  width: 12.5em;
+  height:10em;
+}
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 50%;
+  top: 0%;
+  bottom:100%;
+  left: 0%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0.3s;
+  -moz-transition: all 0.3s ease-in-out 0.3s;
+  transition: all 0.3s ease-in-out 0.3s;
+}
+
+.content:hover .content-details{
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+}
+
+.content-details h6{
+  color: #fff;
+  font-weight: 200;
+  letter-spacing:0.1em;
+  margin-bottom: 0.2em;
+  text-transform: uppercase;
+}
+
+.content-details p{
+  color: #fff;
+  font-size: 0.8em;
+}
+.coordinators{
+position: relative;
+display: inline-flex;
+}
+
+/*event pad*/
+
+*{
+                box-sizing: border-box;
+            }
+        
+           .head{
+            float: center;
+            width: 66.4%;
+            height: auto;
+            outline: none;
+            resize: none;
+            border: 1px solid grey;
+            border-style: groove;
+            text-align: center;
+            background-color: bisque;
+            padding-top: 45px;
+            margin-bottom: 3px;
+            font-weight: bold;
+            font-size: 1.5em;
+            font-family: Verdana, Arial, Helvetica, sans-serif;
+            border: 1px solid black;
+           }
+           .event{
+            float: center;
+            width: 11.3%;
+            height: 650px;
+            outline: none;
+            resize: none;
+            background-color:lightgoldenrodyellow;
+           }
+           .summary{
+            float: center;
+            width: 54.8%;
+            height: 650px;
+            outline: none;
+            resize: none;
+            background-color:lightcyan;
+           }
+           .winners{
+            float: center;
+            width: 11.3%;
+            height: auto;
+            outline: none;
+            resize: none;
+            background-color:rgb(224, 255, 242);
+           }
+           .Over-View{
+            float: center;
+            width: 54.8%;
+            height: auto;
+            outline: none;
+            resize: none;
+            background-color:rgb(241, 224, 255);
+           }
+
+           textarea:hover{
+            background-color: white;
+            border: 2px solid black;
+           }
+
+           @keyframes heartbeat {
+            0%,20%,50%,100%{
+                transform: scale(1);
+            }
+            25%, 75% {
+                transform: scale(1.1);
+           }
+        }
+           .button{
+            padding: 10px 24px;
+            border-radius: 6px;
+            outline: none;
+            border: 1px solid red;
+            font-size: 0.80rem;
+            cursor: pointer;
+            background-color: transparent ;
+            color:black;
+            transition: background-color 0.4s ease , color 0.4s ease ;
+           }
+           .button:hover{
+            border: 1px solid black;
+            background: royalblue;
+            color: white;
+            animation-name: heartbeat;
+            animation-duration: 0.6s ease 2;
+           }
+           
+           .square1{
+            display: inline-block;
+            border:1px solid black;
+            height: 18px;
+            width: 18px;
+            background-color:  bisque;
+           }
+           .square2{
+            display: inline-block;
+            border:1px solid black;
+            height: 18px;
+            width: 18px;
+            margin-left: 10px;
+            background-color: lightgoldenrodyellow;
+           }
+           .square3{
+            display: inline-block;
+            border:1px solid black;
+            height: 18px;
+            width: 18px;
+            margin-left: 10px;
+            background-color:  lightcyan;
+           }
+           .square4{
+            display: inline-block;
+            border:1px solid black;
+            height: 18px;
+            width: 18px;
+            margin-left: 10px;
+            background-color: rgb(224, 255, 242);
+           }
+           .square5{
+            display: inline-block;
+            border:1px solid black;
+            height: 18px;
+            width: 18px;
+            margin-left: 10px;
+            background-color: rgb(241, 224, 255);
+           }
+           #c1{
+    display: flex;
+    flex-direction: column;
+    padding: 8%;
+}
+.span0{
+  display:flex;
+  justify-content: center;
+
+}
+.span2{
+  position: relative;
+  margin-left:5%;
+}
+.span3{
+  position: relative;
+  margin-left:10%;
+}
+.span4{
+  position: relative;
+  margin-left:10%;
+}
+.h{
+  position: relative;
+  padding: 0 0 0 9%;
+}
+.club1{
+    font-size: 0.8em;
+    color: rgba(158, 155, 155, 0.491);
+}
+.club1 :hover{
+    color:black;
+
+}
+.uform{
+        display: inline-flex;
+    }
+    .blink_me {
+  animation: blinker 1.5s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+#filename {
+  width: calc(100% - 200px);
+  border: 2px solid #3ba9f4;
+  border-radius: 2px;
+  background-color: transparent;
+  color: #052a53;
+  padding: 0 10px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 20px;
+  margin-right: 20px;
+}
+#download {
+  background-color: #3ba9f4;
+  color: #fff;
+  font-size: 20px;
+  height: 50px;
+  border: none;
+  border-radius: 2px;
+  width: 174px;
+  cursor: pointer;
+}
+/*Event space*/
+.img1{
+            height: 180px;
+            width: 180px;
+            border-radius: 10px;
+            box-shadow: 0 0 0 0.2rem rgba(0,0,0,0.25);
+            margin: 20px;
+        }
+        
+</style>
+<script>
+          function saveTextToFile() {
+            var textToSave = "Event Name\n\n" + document.getElementById("text1").value + "\n\nAbout event\n\n" + document.getElementById("text2").value +
+            "\n\nSummary\n\n"+document.getElementById("text3").value + "\n\nWinners\n\n" + document.getElementById("text4").value+  "\n\nOver View\n\n" + document.getElementById("text5").value ;
+            var textToSaveAsBlob = new Blob([textToSave], {type:"text/plain"});
+            var textToSaveAsURL = window.URL.createObjectURL(textToSaveAsBlob);
+            var fileNameToSaveAs = document.getElementById("fileInput").value;
+        
+            var downloadLink = document.createElement("a");
+            downloadLink.download = fileNameToSaveAs;
+            downloadLink.innerHTML = "Download File";
+            downloadLink.href = textToSaveAsURL;
+            downloadLink.onclick = destroyClickedElement;
+            downloadLink.style.display = "none";
+            document.body.appendChild(downloadLink);
+        
+            downloadLink.click();
+          }
+        
+          function destroyClickedElement(event) {
+            document.body.removeChild(event.target);
+          }
+</script>
+  </head>
+  <!--header image-->
+  <div class = "flex1" >
+    <img class="header" src="logos\header.png" alt="header" title="Anil neerukonda institute of technology">
+  </div>
+<br>
+<!--naav bar-->
+  <details>
+    <summary><font size="2.5%" >CLUBS</font></summary>
+     
+          <ul  class="no-bullets">
+            <li><a  class="a1" href="#"><font size="2%" >Coding club         </font></a></li>
+            <li><a  class="a1" href="#"><font size="2%" >Voice club          </font></a></li>
+            <li><a  class="a1" href="#"><font size="2%" >Entrepurener club   </font></a></li>
+            <li><a  class="a1" href="#"><font size="2%" >Sports arena club   </font></a></li>
+            <li><a  class="a1" href="#"><font size="2%" >Rereaction club     </font></a></li>
+          </ul>
+        </details>
+  <nav class="m" align="right">
+    <span class="span1"><a  class="a1" href="./2home-code.html" ><b><font size="3%" >Home   </font></b></a></span>
+    <span class="span1"><a  class="a1" href="./0_gallery.html" ><b><font size="3%" >Gallery</font></b></a></span>
+    <span class="span1"><a  class="a1" href="#eventpad" ><b><font size="3%" >Event Pad  </font></b></a></span>
+    <span class="span1"><a  class="a1" href="#eventsapce" ><b><font size="3%" >Event space   </font></b></a></span>
+    <span class="span1"><a  class="a1" href="#contact" ><b><font size="3%" >Contact</font> </b></a></span>
+    <span class="span1"><a  class="a1" href="#" cursor: help;"><b><font size="3%" >Help</font></b></a></span>
+  </nav><br>
+  <!--coordinators deatils-->
+            <center><div class="div0"><h6>CLUB COORDINATORS</h6></div>
+          <div class="coordinators">
+            <div class="container">
+              <div class="content">
+                  <div class="content-overlay"></div>
+                  <img class="content-image" src="https://images.unsplash.com/photo-1433360405326-e50f909805b3?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&w=1080&fit=max&s=359e8e12304ffa04a38627a157fc3362">
+                  <div class="content-details">
+                    <h6 class="content-title">K.Swathi</h6>
+                    <p class="content-text">Faculty coordinator</p>
+                  </div>
+              </div>
+            </div>
+
+            <div class="container">
+              <div class="content">
+                  <div class="content-overlay"></div>
+                  <img class="content-image" src="img/idea-04.jpg">
+                  <div class="content-details">
+                    <h6 class="content-title">B.Darshan</h6>
+                    <p class="content-text">President</p>
+                  </div>
+              </div>
+            </div>
+
+            <div class="container">
+              <div class="content">
+                  <div class="content-overlay"></div>
+                  <img class="content-image" src="img/idea-01.jpg">
+                  <div class="content-details">
+                    <h6 class="content-title">K.Madhuri</h6>
+                    <p class="content-text">Vice President</p>
+                  </div>
+              </div>
+            </div>
+
+            <div class="container">
+              <div class="content">
+                  <div class="content-overlay"></div>
+                  <img class="content-image" src="img/idea-03.jpg">
+                  <div class="content-details">
+                    <h6 class="content-title">P.Iswarya</h6>
+                    <p class="content-text">Secratary</p>
+                  </div>
+              </div>
+            </div>
+
+            <div class="container">
+              <div class="content">
+                  <div class="content-overlay"></div>
+                  <img class="content-image" src="img/idea-01.jpg">
+                  <div class="content-details">
+                    <h6 class="content-title">N.Krishna</h6>
+                    <p class="content-text">Joint Sacratary</p>
+                  </div>
+              </div>
+            </div>
+
+            <div class="container">
+              <div class="content">
+                  <div class="content-overlay"></div>
+                  <img class="content-image" src="img/idea-04.jpg">
+                  <div class="content-details">
+                    <h6 class="content-title">G.Harsha</h6>
+                    <p class="content-text">Treasurer</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+  
+            <hr size="5px" noshade="0$" color="#c0c0c0">
+            <br>
+            <!--event time table image-->
+            <!--div-->
+            <!--div id="eventsapce" class="div0"><h6>EVENT SAPCE</h6></div>
+            <!--div class="container">
+              <form id="form" enctype="multipart/form-data" method="post">
+                  <div class="form-group">
+                      <input type="file" class="form-control" id="image">
+                  </div><br>
+                  <div id="upload" class="form-group">
+                      <button  class="btn btn-primary">Upload</button>
+                  </div>
+                  <button onclick="remove()" id="delete" class="btn btn-danger">Remove all</button>
+              </form>
+              
+              <div id="result"></div>
+          </div>
+          <js to upload image>
+          </div>
+            <br>
+            <hr size="5px" noshade="0$" color="black"-->
+        
+<!--Gallery-->
+<center><div class="div0"><h6>CLUB GALLERY</h6></div></center>
+<div class="div01"><marquee direction="left" width ="98%" scrollamount=12% onmouseover="this.stop()" onmouseout="this.start()">
+  <img src="img/idea-02.jpg" height="150px" width="150px" title="event gallery">
+  <img src="img/idea-03.jpg" height="150px" width="150px" title="event gallery">
+  <img src="img/idea-03.jpg" height="150px" width="150px" title="event gallery">
+</marquee></div>
+
+<center><h4 class="blink_me"><b>View full gallery</b></h4></center>
+<button class="btn btn-outline-warning btn-lg"><a class="a1" href="./0_gallery.html">Gallery</a></button>
+<br><br>
+
+<!--event pad-->
+<div id="eventpad">
+<center>
+  <div style="background-color: rgba(108, 228, 255, 0.454);border-radius: 50px;width: 200px;border:solid 1px rgb(255, 175, 70);float: center;width: 10%;"><strong><h3 style="font-size:1.2vw;">EVENT PAD</h3></strong></div>
+  <br>
+  <div class="labe-in-textarea">
+      <textarea class="head" name="header" id="text1" rows="2" title="TITLE OF THE EVENT " placeholder="Event name..."></textarea>
+  </div>
+<div>
+  <div >
+      <textarea class="event" name="About" id="text2" cols="22" rows="40" title="ABOUT EVENT" placeholder="About Event..."></textarea>
+      <textarea  class="summary" name="summary" id="text3" cols="120" rows="40" title="SUMMARY OF THE EVENT" placeholder="Event Summary..."></textarea>
+  </div>
+</div>
+
+  <div>
+      <div>
+          <textarea  class="winners" name="winner" id="text4" cols="22" rows="15" title="WINNERS AND COUNT OF PARTICIPANTS" placeholder="Winners & participants..."></textarea>
+          <textarea  class="Over-View" name="overview" id="text5" cols="120" rows="15" title="OVERVIEW ON THE EVENT" placeholder="Event Overview..."></textarea>
+      </div>
+  </div>
+          </center>
+</div>
+<br>
+ <center>
+  <div class="square1"></div><span>Event name</span>
+  <div class="square2"></div><span>About Event</span>
+  <div class="square3"></div><span>Summary</span>
+  <div class="square4"></div><span>Winners</span>
+  <div class="square5"></div><span>Over-view</span>
+  <br>
+  <br>
+  <label for="">File Name:</label>
+        <input id="fileInput" placeholder="Name here..."></input>
+        <button class="button" onclick="saveTextToFile()">save</button>
+          </center>
+  <br>
+  <br>
+  <!--footer-->
+  <div style="padding:2px;background:#f7e3c9;height:auto;width:100%;">
+    <center><p class="club1">@copy rights-terms & rights applied</p></center>
+    <div class="span0" >
+    <span class="span2" style="font-size: 2.2vh;">
+      <span ><a href="https://anits.edu.in/" target="_blank"><img src="C:\Users\DarshanBattula\Downloads\download.jpeg" height="auto" width="40%"></a></span>
+      <span ><font color=#FD5F00><h6>OFFICE ADDRESS</h6></font></span>
+      <span ><h6>Sangivalasa - 531162, <br>Bheemunipatnam (Mandal), <br>Visakhapatnam (Dist.)<br>Fax: 08933-226395</h6></span>
+      <span ><font id="contact" color=#FD5F00><h6>BUSINESS PHONE</h6></font></span>
+      <span ><h6>7330789893 , 9154220250</h6></span>
+      <span ><font color=#FD5F00><h6>CLUB EMAILS</h6></font></span>
+      <span ><h6><a class="a1" href="#" alt="" style="text-decoration: none;">codingclub@gamil.com<a><br>
+          <a class="a1" href="#" alt="" style="text-decoration: none;">uiux@gmail.com</a><br>
+          <a class="a1" href="#" alt="" style="text-decoration: none;">voiceclub@gmail.com</a><br>
+          <a class="a1" href="#" alt="" style="text-decoration: none;">enterprenureshipclub@gmail.com</a><br>
+          <a class="a1" href="#" alt="" style="text-decoration: none;">sportsclub@gmial.com</a><br>
+          <a class="a1" href="#" alt="" style="text-decoration: none;">recreationclub@gmail.com </a></h6></span>
+      </span>
+
+      <table class="span3" style="font-size:1.5vh;display:flex;">
+        <tr>
+          <td>
+            <br>
+            <font color=#FD5F00><h4 class="h">IT Clubs</h4></font>
+            <font color="gray">
+          <nav>
+           <a class="a1" id="c1" href="#" alt="" style="text-decoration: none;">CODING CLUB</a>
+              <a class="a1" id="c1" href="#" alt="" style="text-decoration: none;">VOICE CLUB</a>
+                <a class="a1" id="c1" href="#" alt="" style="text-decoration: none;">UI/UX CLUB</a>
+                  <a class="a1" id="c1" href="#" alt="" style="text-decoration: none;">ENTERPRENURESHIP CLUB</a>
+                    <a class="a1" id="c1" href="#" alt="" style="text-decoration: none;">SPORTS AREAN CLUB </a>
+                      <a class="a1" id="c1" href="#" alt="" style="text-decoration: none;">RECREATION CLUB</a>
+                  </nav><font>
+          </td>
+        </tr>
+      </table>
+
+        <table class="span4" style="font-size:1.5vh;display:flex;" >
+          <tr>
+            <td>
+              <br>
+              <font color=#FD5F00><h4>Menu</h4></font>
+              <font color="gray">
+              <nav>
+              <a class="a1" id="c1" href="#" alt="" style="text-decoration: none;">HOME</a>
+                <a class="a1" id="c1" href="#" alt="" style="text-decoration: none;">ABOUT</a>
+                  <a class="a1" id="c1" href="#" alt="" style="text-decoration: none;">GALLERY</a>
+                    <a class="a1" id="c1" href="#" alt="" style="text-decoration: none;">LOGIN</a>
+                      <a class="a1" id="c1" href="#" alt="" style="text-decoration: none;">REGISTER</a>
+                        <a class="a1" id="c1" href="#" alt="" style="text-decoration: none;">CONTACT</a>
+              </nav><font>
+            </td>
+          </tr>
+        </table>
+   </div>
+   <hr size="5%" noshade="0" style="border-radius: 50px;" title="THE END - CLICK HOME">
+  </div>
+</body>
+</html>

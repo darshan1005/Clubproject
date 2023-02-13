@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script>
+        function showpassword(){
+            var sp = document.getElementById("mypsw");
+            if(sp.type==="password"){
+                sp.type="text";
+            }
+            else{
+                x.type="password";
+            }
+        }
+    </script>
+    <style>
+        legend{
+            
+            border-style: none;
+        
+        }
+    </style>
+</head>
+<body>
+   <center> <fieldset action="">
+        <legend><h1>LOGIN</h1></legend>
+        <Label>Username:</Label>
+        <input type="text" name="UserName" value="" placeholder="Email/username"><br><br>
+        <Label>Password:</Label>
+        <input type="password" value="" id="mypsw" placeholder="User password"><br><br>
+        <input type="checkbox" name="showpswd" id="" onclick="showpassword()">
+        <label for="showpswd">Show Password</label><br><br>
+        <button type="button" class="btn btn-primary btn-sm">LOGIN</button>
+
+    </fieldset></center>
+</body>
+</html>
